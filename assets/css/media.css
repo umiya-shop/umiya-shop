@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .swiper-button-next{
+    display: none !important;
+  }
+  .swiper-button-prev{
+    display: none !important;
+  }
+  #reviewCarousel p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px){
+  .offcanvas{
+    width: 85% !important;
+  }
+}
+
+
+@media (max-width: 576px) {
+  #contact .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .btn-light{
+    padding: 10px 15px;
+  }
+}

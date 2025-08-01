@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WatchZone - Online Watch Store</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/media.css" />
+</head>
+
+<body class="bg-black text-white">
+  <!-- Header -->
+  <header class="p-4 text-center bg-dark shadow">
+    <h1 class="display-5">WatchZone</h1>
+    <p class="m-0">Premium Watches at Your Fingertips</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">.
+        <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <a class="navbar-brand" href="#products">Product</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">.
+        <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="d-md-block d-none"><a class="navbar-brand" href="#reviews">Reviews</a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">.
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-start text-bg-dark" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">.</button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container py-2">
+    <!-- Home Section -->
+    <section id="home" class="mb-3 text-center">
+      <h2>Welcome to WatchZone</h2>
+      <p class="m-0 pt-3">Discover premium quality watches delivered to your doorstep. Order via WhatsApp now!</p>
+    </section>
+
+    <!-- Deal of the Day Section (Dark Theme) -->
+    <section class="py-2 bg-black text-white border-top border-secondary">
+      <div class="container">
+        <h2 class="mb-3 text-center"><i class="ri-fire-fill text-danger"></i> Deal of the Day</h2>
+        <p class="lead text-center text-secondary">Grab <strong class="text-warning">25% OFF</strong> before midnight!
+        </p>
+
+        <div class="row justify-content-center align-items-center g-4 mt-4">
+          <div class="col-md-5">
+            <img src="./assets/images/watch2.jpg" alt="Deal Watch"
+              class="img-fluid rounded shadow border border-secondary">
+          </div>
+          <div class="col-md-5">
+            <div
+              class="bg-dark p-4 rounded shadow-sm border border-secondary h-100 d-flex flex-column justify-content-center">
+              <h4 class="text-warning">Sporty Black</h4>
+              <p class="text-secondary mb-1">Bold, durable, and made for every outfit.</p>
+              <p class="fs-5 mb-3">
+                <span class="text-white fw-bold">Now ₹2,499</span>
+                <del class="text-muted ms-2">₹3,299</del>
+              </p>
+              <a href="https://wa.me/917984328681?text=I'm%20interested%20in%20the%20Deal%20of%20the%20Day%20watch"
+                class="btn btn-outline-warning px-4">
+                Grab Now
+              </a>
+              <p class="text-muted mt-3 mb-0 offer-my">Offer valid till 11:59 PM today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Product Section -->
+    <section id="products" class="mb-2">
+      <h2>Featured Watches</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow  ">
+            <img src="./assets/images/watch1.jpg" class="card-img-top overflow-hidden img-fluid" alt="Watch 1" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Silver</h5>
+              <p class="card-text">Elegant design for all occasions.</p>
+              <div class="d-flex gap-3">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  view More
+                </button>
+                <a href="https://wa.me/917984328681?text=I'm%20interested%20in%20Classic%20Silver"
+                  class="btn btn-light">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow  ">
+            <img src="./assets/images/watch1.jpg" class="card-img-top overflow-hidden img-fluid" alt="Watch 1" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Silver</h5>
+              <p class="card-text">Elegant design for all occasions.</p>
+              <div class="d-flex gap-3">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  view More
+                </button>
+                <a href="https://wa.me/917984328681?text=I'm%20interested%20in%20Classic%20Silver"
+                  class="btn btn-light">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow  ">
+            <img src="./assets/images/watch1.jpg" class="card-img-top overflow-hidden img-fluid" alt="Watch 1" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Silver</h5>
+              <p class="card-text">Elegant design for all occasions.</p>
+              <div class="d-flex gap-3">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  view More
+                </button>
+                <a href="https://wa.me/917984328681?text=I'm%20interested%20in%20Classic%20Silver"
+                  class="btn btn-light">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow  ">
+            <img src="./assets/images/watch1.jpg" class="card-img-top overflow-hidden img-fluid" alt="Watch 1" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Silver</h5>
+              <p class="card-text">Elegant design for all occasions.</p>
+              <div class="d-flex gap-3">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  view More
+                </button>
+                <a href="https://wa.me/917984328681?text=I'm%20interested%20in%20Classic%20Silver"
+                  class="btn btn-light">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow  ">
+            <img src="./assets/images/watch2.jpg" class="card-img-top overflow-hidden img-fluid" alt="Watch 2" />
+            <div class="card-body">
+              <h5 class="card-title">Sporty Black</h5>
+              <p class="card-text">Modern and bold for every outfit.</p>
+              <div class="d-flex gap-3">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  view More
+                </button>
+                <a href="https://wa.me/917984328681?text=I'm%20interested%20in%20Classic%20Silver"
+                  class="btn btn-light">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow  ">
+            <img src="./assets/images/watch3.jpg" class="card-img-top overflow-hidden img-fluid" alt="Watch 3" />
+            <div class="card-body">
+              <h5 class="card-title">Luxury Gold</h5>
+              <p class="card-text">Shine bright with elegance.</p>
+              <div class="d-flex gap-3">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  view More
+                </button>
+                <a href="https://wa.me/917984328681?text=I'm%20interested%20in%20Classic%20Silver"
+                  class="btn btn-light">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="reviews" class="text-center container py-5">
+      <h2>Customer Reviews</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <p>"Amazing quality and fast delivery!"</p>
+            <div class="d-flex align-items-center justify-content-center pt-2">
+              <img src="./assets/images/reviwe1.webp" class="review-img" alt="Jane Doe" />
+              <div>
+                <h5 class="mb-0">Prexa Patel</h5>
+                <!-- <small class="text-secondary">CEO, Example Company</small> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <p>"durable watches. Highly recommend!"</p>
+            <div class="d-flex align-items-center justify-content-center pt-2">
+              <img src="./assets/images/rewiwe2.jpg" class="review-img" alt="June Doe" />
+              <div>
+                <h5 class="mb-0">Roshan pal</h5>
+                <!-- <small class="text-secondary">Designer, Creative Studio</small> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <p>"Bought one for my husband, and he loved it!"</p>
+            <div class="d-flex align-items-center justify-content-center pt-2">
+              <img src="./assets/images/review3.jpg" class="review-img" alt="John Doe" />
+              <div>
+                <h5 class="mb-0">John Doe</h5>
+                <!-- <small class="text-secondary">Developer, TechCorp</small> -->
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <p>"Bought one for my husband, and he loved it!"</p>
+            <div class="d-flex align-items-center justify-content-center pt-2">
+              <img src="./assets/images/review4.jpg" class="review-img" alt="John Doe" />
+              <div>
+                <h5 class="mb-0">Alex card</h5>
+                <!-- <small class="text-secondary">Developer, TechCorp</small> -->
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <p>"Bought one for my husband, and he loved it!"</p>
+            <div class="d-flex align-items-center justify-content-center pt-2">
+              <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" class="review-img"
+                alt="John Doe" />
+              <div>
+                <h5 class="mb-0">Rankl kusin</h5>
+                <!-- <small class="text-secondary">Developer, TechCorp</small> -->
+              </div>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next text-white"></div>
+        <div class="swiper-button-prev text-white"></div>
+        <!-- <div class="swiper-pagination mt-3"></div> -->
+      </div>
+    </section>
+
+
+    <section class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2>Why Choose WatchZone?</h2>
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <i class="ri-star-s-fill fs-1 text-warning"></i>
+            <h5>Premium Quality</h5>
+            <p>Our watches are built to last with high-grade materials.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="ri-truck-fill fs-1 text-warning"></i>
+            <h5>Free Shipping</h5>
+            <p>Enjoy fast & free delivery across India.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="ri-shield-check-fill fs-1 text-warning"></i>
+            <h5>Secure Payments</h5>
+            <p>All transactions are encrypted and secure.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="ri-exchange-dollar-fill fs-1 text-warning"></i>
+            <h5>Easy Exchange</h5>
+            <p>Not satisfied? Exchange it within 7 days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="about" class="py-5 bg-black text-white">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <img src="./assets/images/OUR-STORY.png" alt="Our Story" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-md-6">
+            <h2>Our Story</h2>
+            <p>
+              WatchZone started with a simple vision: to bring premium-quality, affordable watches to the modern Indian
+              customer.
+              Founded by passionate watch enthusiasts, our journey began in 2022 with a small collection, and today,
+              we've served
+              over 10,000 happy customers across India.
+            </p>
+            <p>
+              Every watch we curate is selected for its timeless design, durability, and value. We believe that a watch
+              is more than
+              just an accessory — it's a statement of your personality. That's why we are committed to delivering
+              excellence in both
+              product and service.
+            </p>
+            <a href="#products" class="btn btn-outline-light mt-3">Explore Our Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment & Offer Section -->
+    <!-- Secure Payments & Offers Section -->
+    <section class="py-5 bg-dark text-white border-top border-secondary mt-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Secure Payments & Exclusive Offer</h2>
+        <p class="lead">We support multiple trusted payment options for a seamless experience.</p>
+
+        <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap my-4">
+          <img src="./assets/images/google-pay-icon-removebg-preview.png" alt="GPay" height="40">
+          <img src="./assets/images/b2e1af76fbbe9bc446544b8fa71b37b1-removebg-preview.png" alt="PhonePe" height="40">
+          <!-- <img src="./assets/images/free-upi-2085056-1747946-removebg-preview.png" alt="Paytm" height="40"> -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/256px-Visa.svg.png" alt="Visa"
+            height="40">
+        </div>
+
+        <div class="bg-warning text-dark p-4 rounded shadow-sm d-inline-block">
+          <h4 class="mb-1">🎁 15% OFF on Prepaid Orders!</h4>
+          <p class="mb-0">Pay via UPI, Wallets, or Cards and enjoy exclusive savings.</p>
+        </div>
+
+        <p class="mt-3 text-secondary">Cash on Delivery is available but does not include the discount.</p>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Dark Theme + Classic Accordion) -->
+    <section class="py-5 bg-black text-white">
+      <div class="container">
+        <h2 class="text-center mb-4">FAQs</h2>
+        <div class="accordion" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item bg-dark border-secondary">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                How long does delivery take?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-light">
+                Orders are typically delivered within 3–5 business days across India.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item bg-dark border-secondary">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                Do you offer any warranty?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-light">
+                Yes, all our watches come with a 6-month functional warranty.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item bg-dark border-secondary">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                What if I receive a damaged product?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-light">
+                In the rare case you receive a damaged item, contact our support within 24 hours of delivery.
+                We'll arrange a quick replacement or refund.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-secondary text-white mt-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row g-4">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-light">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-6">
+            <div class="p-4 bg-dark rounded h-100">
+              <h4>Get in Touch</h4>
+              <p>Email: umiya.stores1@gmail.com</p>
+              <p>Phone: +91 79843 28681</p>
+              <p>Location: Surat, Gujrat, India</p>
+              <div class="mt-3">
+                <a href="https://wa.me/917984328681?text=Hi%21%20I%E2%80%99m%20interested%20in%20your%20products.%20Can%20you%20share%20more%20info%20about%20your%20business%3F"
+                  class="btn btn-success me-2">
+                  WhatsApp Us
+                </a>
+                <a href="#home" class="btn btn-outline-light">Back to Top</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    </section>
+
+    <!-- Contact Section -->
+    </section>
+
+    <!-- 🔽 Add "As Seen On" Section Here -->
+    <!-- <section class="py-5 bg-black text-white border-top border-secondary">
+  <div class="container text-center">
+    <h2 class="mb-4">As Seen On</h2>
+    <p class="text-secondary mb-4">Trusted by media and influencers across India</p>
+    
+    <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+      <img src="./assets/images/featured-logo1.png" alt="Logo 1" height="40">
+      <img src="./assets/images/featured-logo2.png" alt="Logo 2" height="40">
+      <img src="./assets/images/featured-logo3.png" alt="Logo 3" height="40">
+      <img src="./assets/images/featured-logo4.png" alt="Logo 4" height="40">
+    </div>
+    
+    <p class="mt-4 text-secondary">We’re proud to be recognized by top publications and fashion influencers.</p>
+  </div>
+</section> -->
+
+    <!-- Footer -->
+    <!-- <footer class="bg-dark text-center py-3">
+  <p>&copy; 2025 WatchZone. All rights reserved.</p>
+</footer> -->
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center py-3">
+    <p>&copy; 2025 WatchZone. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-1000">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Our Watch Collection</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-12 col-md-6">
+                <div class="ratio ratio-4x3">
+                  <img
+                    src="https://assets.ajio.com/medias/sys_master/root/20231115/pJA5/6554d7e6ddf779151980c1b1/-473Wx593H-469457012-green-MODEL8.jpg"
+                    alt="Watch 1" class="img-fluid rounded shadow object-fit-cover">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="ratio ratio-4x3">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2SUXvTs27BgdxpNUZTSQc1vN7ViQsUffQA&s"
+                    alt="Watch 2" class="img-fluid rounded shadow object-fit-cover">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="ratio ratio-4x3">
+                  <img
+                    src="https://fashionrazor.com/cdn/shop/products/0_Men-Quartz-Full-Steel-Watches-Luxury-Casual-Reloj-Business-Wristwatch-Stainless-Steel-Watch-Men-relogio-masculino.jpg?v=1598086129"
+                    alt="Watch 3" class="img-fluid rounded shadow object-fit-cover">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="ratio ratio-4x3">
+                  <img src="https://www.midowatches.com/media/catalog/category/M049.526.11.091.00_2000x1000.jpg"
+                    alt="Watch 4" class="img-fluid rounded shadow object-fit-cover">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="./assets/js/bootstrap-bundel.js"></script>
+  <script src="./assets/js/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
